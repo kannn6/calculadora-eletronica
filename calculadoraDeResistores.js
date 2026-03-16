@@ -1,3 +1,4 @@
+function calculadoraDeResistores(){
 let faixas = parseInt(prompt("Quantidade de faixas (4 ou 5):"));
 let cores = [];
 
@@ -5,6 +6,7 @@ for (let i = 0; i < faixas; i++) {
     let cor = parseInt(prompt(`Cor da ${i + 1}ª faixa:\n0-Preto, 1-Marrom, 2-Vermelho, 3-Laranja, 4-Amarelo, 5-Verde, 6-Azul, 7-Violeta, 8-Cinza, 9-Branco, 10-Ouro, 11-Prata`));
     cores.push(cor);
 }
+
 
 const multiplicadores = [1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 0.1, 0.01];
 const tolerancias = {
@@ -32,3 +34,5 @@ let leitura = ohm >= 1000000 ? `${ohm / 1000000} MΩ` :
 console.log(`Resistência: ${leitura}`);
 console.log(`Tolerância: ${tol}`);
 alert(`Resultado: ${leitura} com tolerância de ${tol}`);
+
+}

@@ -1,3 +1,4 @@
+function calculadoraDeConsumo(){
 let gasto = 0;
 let mes = 0;
 let diario = 0;
@@ -30,4 +31,5 @@ if(calculo == 1){
 }else{
     console.log("Número invalido!");
 
+}
 }
