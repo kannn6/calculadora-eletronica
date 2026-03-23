@@ -9,5 +9,5 @@ const nomes = ["G", "MG", "K", "BS", "ML", "MC", "NN", "PC"];
 
 let resultado = valor * (escalas[medidaAtual] / escalas[converterPara]);
 
-console.log("O resultado é: ", resultado)
+console.log("O resultado é: ", resultado , nomes[converterPara])
 }
